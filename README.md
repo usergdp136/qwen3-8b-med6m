@@ -6,9 +6,9 @@ Code and statistics for the LoRA adapter **Qwen3-8B med6m (S1_v2r, checkpoint 44
 
 **Headline (sealed, single-use test, n=3766 medical items):** 61.34 % → 63.67 %, Δ = +2.34 pp, 95 % paired-bootstrap CI [+1.14, +3.53], exact McNemar p = 1.4·10⁻⁴ (306 vs 218). MedQA (+1.55) and MMLU-med (+0.74) are *not* individually significant. ARC-it guard +0.74 pp (no regression). Checkpoint 443, not the final 886.
 
-$$W = W_0 + s\,\frac{\alpha}{r}\,BA,\qquad s=0.5,\ \alpha/r=1$$
+$$W = W_0 + s\ \frac{\alpha}{r}\ BA,\qquad s=0.5,\ \alpha/r=1$$
 
-$$\Delta_{\mathrm{pp}}=\frac{100\,(n_+-n_-)}{n},\qquad p=\min\Big\{1,\,2\sum_{k=0}^{\min(n_-,n_+)}\binom{m}{k}2^{-m}\Big\}$$
+$$\Delta_{\mathrm{pp}}=\frac{100\ (n_+-n_-)}{n},\qquad p=\min\left\lbrace 1,\ 2\sum_{k=0}^{\min(n_-,n_+)}\binom{m}{k}2^{-m}\right\rbrace$$
 
 (If your viewer does not render math: `figures/eq_lora.png`, `eq_delta.png`, `eq_mcnemar.png`.)
 
