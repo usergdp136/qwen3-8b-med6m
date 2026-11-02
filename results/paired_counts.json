@@ -1,0 +1,19 @@
+{
+  "_note": "Sealed test, checkpoint-443 vs base, paired per item (both/only_model/only_base/neither). Source: sealed_results.json on the training machine, re-derived and checked by an independent audit (see paper).",
+  "050": {
+    "medmcqa":  {"n": 2078, "both": 1051, "only_model": 200, "only_base": 140, "neither": 687},
+    "medqa":    {"n": 646,  "both": 359,  "only_model": 57,  "only_base": 47,  "neither": 183},
+    "mmlu_med": {"n": 538,  "both": 400,  "only_model": 25,  "only_base": 21,  "neither": 92},
+    "pubmedqa": {"n": 504,  "both": 282,  "only_model": 24,  "only_base": 10,  "neither": 188},
+    "arc_it":   {"n": 543,  "both": 466,  "only_model": 17,  "only_base": 13,  "neither": 47},
+    "medical_pool": {"n": 3766, "both": 2092, "only_model": 306, "only_base": 218, "neither": 1150}
+  },
+  "075": {
+    "medmcqa":  {"n": 2078, "both": 1037, "only_model": 230, "only_base": 154, "neither": 657},
+    "medqa":    {"n": 646,  "both": 353,  "only_model": 56,  "only_base": 53,  "neither": 184},
+    "mmlu_med": {"n": 538,  "both": 397,  "only_model": 28,  "only_base": 24,  "neither": 89},
+    "pubmedqa": {"n": 504,  "both": 279,  "only_model": 22,  "only_base": 13,  "neither": 190},
+    "arc_it":   {"n": 543,  "both": 462,  "only_model": 20,  "only_base": 17,  "neither": 44},
+    "medical_pool": {"n": 3766, "both": 2066, "only_model": 336, "only_base": 244, "neither": 1120}
+  }
+}

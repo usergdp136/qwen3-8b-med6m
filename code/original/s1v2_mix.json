@@ -1,0 +1,17 @@
+{
+ "sources": {
+  "medmcqa_train": 0.42099,
+  "wiki_it_med": 0.31574,
+  "wiki_en_med": 0.21049,
+  "medqa_train": 0.05277
+ },
+ "max_passes": 2.0,
+ "max_tokens": 58064207,
+ "note": "Regola quote abl_s1v2.py 2026-10-29 10:41: approvate fisse a 55.0M token, nuove ammesse ['medqa_train'] a {'pmc_clin': 1.0, 'medquad': 2.0, 'medqa_train': 2.0} passaggi, scala 1.000, totale 58.1M (tetto 180M).",
+ "_target_tokens": {
+  "medmcqa_train": 24444444,
+  "wiki_it_med": 18333333,
+  "wiki_en_med": 12222222,
+  "medqa_train": 3064206
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "out_dir": "D:\\tuning\\med6m\\runs\\S1_v2r",
+ "train": "D:\\tuning\\med6m\\runs\\S1_v2r\\train.jsonl",
+ "max_seq": 2048,
+ "grad_accum": 16,
+ "max_steps": 886,
+ "lr": 1.3e-05,
+ "warmup_steps": 25,
+ "lora_r": 64,
+ "lora_alpha": 64,
+ "seed": 3408,
+ "save_steps": 240,
+ "save_total_limit": 4,
+ "base_dev": "D:\\tuning\\med6m\\state\\base_dev_full.json",
+ "gate_fracs": [
+  0.5,
+  0.75
+ ],
+ "gate_cap": 0,
+ "tol": 1.0,
+ "final_dev_eval": true,
+ "init_adapter": "D:\\tuning\\med6m\\runs\\S1_v2\\checkpoint-885",
+ "gate_mode": "se",
+ "k": 2.0,
+ "mid_need_gain": true,
+ "gate_note": "31/10/2026 approvato da Giovanni 18:15: gate_se bootstrap sul dev intero (cap 0) a 75% e finale; gate 50% (step 443) gia valutato post-hoc con gate_se: OK"
+}

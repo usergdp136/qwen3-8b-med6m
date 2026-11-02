@@ -1,0 +1,134 @@
+{
+ "_total_eff_tokens_target": 29467934,
+ "_steps_planned": 886,
+ "_replay_share_target": 0.22,
+ "medical": {
+  "medmcqa_train": {
+   "quota": 0.421,
+   "docs": 46958,
+   "eff_tokens": 9676565,
+   "passes_of_pool_approx": 1.0
+  },
+  "wiki_it_med": {
+   "quota": 0.3157,
+   "docs": 6337,
+   "eff_tokens": 7258296,
+   "passes_of_pool_approx": 1.0
+  },
+  "wiki_en_med": {
+   "quota": 0.2105,
+   "docs": 4300,
+   "eff_tokens": 4838236,
+   "passes_of_pool_approx": 1.0
+  },
+  "medqa_train": {
+   "quota": 0.0528,
+   "docs": 5707,
+   "eff_tokens": 1212987,
+   "passes_of_pool_approx": 1.0
+  }
+ },
+ "replay": {
+  "it_instruct": {
+   "members": [
+    "oasst2_it",
+    "aya_it"
+   ],
+   "target_eff": 1004856,
+   "docs": 1734,
+   "eff_tokens": 325954,
+   "passes": 2.0
+  },
+  "en_instruct": {
+   "members": [
+    "oasst2_en",
+    "aya_en",
+    "dolly_en"
+   ],
+   "target_eff": 1166930,
+   "docs": 3996,
+   "eff_tokens": 1167038,
+   "passes": 1.0
+  },
+  "wiki_it_gen": {
+   "members": [
+    "wiki_it_gen"
+   ],
+   "target_eff": 1960187,
+   "docs": 2028,
+   "eff_tokens": 1960623,
+   "passes": 1.0
+  },
+  "fineweb_edu": {
+   "members": [
+    "fineweb_edu"
+   ],
+   "target_eff": 1620736,
+   "docs": 1815,
+   "eff_tokens": 1620952,
+   "passes": 1.0
+  },
+  "fineweb2_it": {
+   "members": [
+    "fineweb2_it"
+   ],
+   "target_eff": 1409137,
+   "docs": 1821,
+   "eff_tokens": 1410132,
+   "passes": 1.0
+  }
+ },
+ "sources_stats": {
+  "oasst2_it": {
+   "license": "Apache-2.0",
+   "raw_rows": 181,
+   "kept_after_decontam": 181,
+   "dropped_contaminated": 0
+  },
+  "oasst2_en": {
+   "license": "Apache-2.0",
+   "raw_rows": 10144,
+   "kept_after_decontam": 10142,
+   "dropped_contaminated": 2
+  },
+  "aya_it": {
+   "license": "Apache-2.0",
+   "raw_rows": 688,
+   "kept_after_decontam": 686,
+   "dropped_contaminated": 2
+  },
+  "aya_en": {
+   "license": "Apache-2.0",
+   "raw_rows": 2912,
+   "kept_after_decontam": 2907,
+   "dropped_contaminated": 5
+  },
+  "dolly_en": {
+   "license": "CC-BY-SA-3.0",
+   "raw_rows": 12087,
+   "kept_after_decontam": 12082,
+   "dropped_contaminated": 5
+  },
+  "fineweb_edu": {
+   "license": "ODC-By-1.0",
+   "raw_rows": 3500,
+   "kept_after_decontam": 3499,
+   "dropped_contaminated": 1
+  },
+  "wiki_it_gen": {
+   "license": "CC-BY-SA-3.0/GFDL",
+   "raw_rows": 12000,
+   "kept_after_decontam": 12000,
+   "note": "file .clean.jsonl gia decontaminato in S0 (10-gram vs eval dev+test)"
+  },
+  "fineweb2_it": {
+   "license": "ODC-By-1.0",
+   "raw_rows": 12000,
+   "kept_after_decontam": 12000,
+   "note": "file .clean.jsonl gia decontaminato in S0 (10-gram vs eval dev+test)"
+  }
+ },
+ "total_eff_tokens": 29470783,
+ "replay_share_actual": 0.22,
+ "italian_share_note": "wiki_it_med + wiki_it_gen + fineweb2_it + oasst2_it + aya_it"
+}

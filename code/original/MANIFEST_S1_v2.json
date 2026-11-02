@@ -1,0 +1,32 @@
+{
+ "_total_target_tokens": 58059244,
+ "_max_passes": 2.0,
+ "medmcqa_train": {
+  "quota": 0.421,
+  "docs": 116236,
+  "est_tokens": 24442605,
+  "avail_tokens": 12221302,
+  "passes": 2.0
+ },
+ "wiki_it_med": {
+  "quota": 0.316,
+  "docs": 12111,
+  "est_tokens": 18332537,
+  "avail_tokens": 10997663,
+  "passes": 1.667
+ },
+ "wiki_en_med": {
+  "quota": 0.21,
+  "docs": 6884,
+  "est_tokens": 12222967,
+  "avail_tokens": 15287360,
+  "passes": 0.8
+ },
+ "medqa_train": {
+  "quota": 0.053,
+  "docs": 12925,
+  "est_tokens": 3064016,
+  "avail_tokens": 1532103,
+  "passes": 2.0
+ }
+}

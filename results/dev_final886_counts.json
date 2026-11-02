@@ -1,0 +1,8 @@
+{
+  "_note": "DEV split, final checkpoint 886 (scale 1.0) vs base. Dev was used for selection: NOT an independent test.",
+  "medmcqa":  {"both": 1014, "only_model": 238, "only_base": 170, "neither": 683},
+  "medqa":    {"both": 343,  "only_model": 70,  "only_base": 46,  "neither": 168},
+  "mmlu_med": {"both": 391,  "only_model": 30,  "only_base": 34,  "neither": 96},
+  "pubmedqa": {"both": 250,  "only_model": 25,  "only_base": 17,  "neither": 204},
+  "arc_it":   {"both": 480,  "only_model": 18,  "only_base": 29,  "neither": 62}
+}

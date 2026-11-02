@@ -1,0 +1,70 @@
+{
+ "stage1_S1_v2": {
+  "max_seq": 2048,
+  "grad_accum": 16,
+  "stopped_at_checkpoint": 885,
+  "lr": 5e-05,
+  "lora_r": 64,
+  "lora_alpha": 64,
+  "seed": 3407,
+  "sources": [
+   "medmcqa_train",
+   "wiki_it_med",
+   "wiki_en_med",
+   "medqa_train"
+  ],
+  "quota": [
+   0.421,
+   0.316,
+   0.21,
+   0.053
+  ],
+  "steps_completed": 885,
+  "max_tokens_mix": 58064207
+ },
+ "stage2_S1_v2r": {
+  "max_seq": 2048,
+  "grad_accum": 16,
+  "max_steps": 886,
+  "published_checkpoint": 443,
+  "lr": 1.3e-05,
+  "warmup_steps": 25,
+  "lora_r": 64,
+  "lora_alpha": 64,
+  "seed": 3408,
+  "init_adapter": "S1_v2/checkpoint-885",
+  "replay_share": 0.22,
+  "total_eff_tokens_planned": 29467934,
+  "optimizer": "adamw_8bit",
+  "scheduler": "cosine",
+  "packing": true,
+  "bf16_or_fp16": "fp16 (Tesla T4)",
+  "report_to": "none",
+  "medical_docs": {
+   "medmcqa_train": 46958,
+   "wiki_it_med": 6337,
+   "wiki_en_med": 4300,
+   "medqa_train": 5707
+  },
+  "replay_docs": {
+   "it_instruct(oasst2_it,aya_it)": 1734,
+   "en_instruct(oasst2_en,aya_en,dolly_en)": 3996,
+   "wiki_it_gen": 2028,
+   "fineweb_edu": 1815,
+   "fineweb2_it": 1821
+  },
+  "total_eff_tokens_actual": 29470783
+ },
+ "software": {
+  "unsloth": "2026.10.7",
+  "transformers": "5.17.0",
+  "peft": "0.21.2",
+  "trl": "1.15.0",
+  "bitsandbytes": "0.50.2",
+  "torch": "2.11.0+cu128",
+  "datasets": "4.8.5"
+ },
+ "hardware": "Tesla T4 (14.8 GB), Windows",
+ "gate_history_dev": "step 443: failed with 200-item cap (mmlu_med 73.5 < base 77.13 - 1.0), rated OK post hoc with gate_se on full dev; step 664 OK; final 886 OK with MED_POOL +2.54 (SE 0.66, z 3.84). Criterion changed 31/10/2026 (gate_se, k=2).",
+ "sealed_test": "single use, marker TEST_USED 2026-11-01; scales 0.5 and 0.75 + base"
+}
